@@ -1,0 +1,12 @@
+C:\Users\bns\Desktop\arrays\names\bin\names.exe.config
+C:\Users\bns\Desktop\arrays\names\bin\names.exe
+C:\Users\bns\Desktop\arrays\names\bin\names.pdb
+C:\Users\bns\Desktop\arrays\names\obj\Debug\names.csprojResolveAssemblyReference.cache
+C:\Users\bns\Desktop\arrays\names\obj\Debug\names.exe
+C:\Users\bns\Desktop\arrays\names\obj\Debug\names.pdb
+C:\Users\vorou\code\kontur-csharp-101\britskaya\arrays-pr\arrays\names\bin\names.exe.config
+C:\Users\vorou\code\kontur-csharp-101\britskaya\arrays-pr\arrays\names\bin\names.exe
+C:\Users\vorou\code\kontur-csharp-101\britskaya\arrays-pr\arrays\names\bin\names.pdb
+C:\Users\vorou\code\kontur-csharp-101\britskaya\arrays-pr\arrays\names\obj\Debug\names.csprojResolveAssemblyReference.cache
+C:\Users\vorou\code\kontur-csharp-101\britskaya\arrays-pr\arrays\names\obj\Debug\names.exe
+C:\Users\vorou\code\kontur-csharp-101\britskaya\arrays-pr\arrays\names\obj\Debug\names.pdb

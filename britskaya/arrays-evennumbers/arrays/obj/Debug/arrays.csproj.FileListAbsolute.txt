@@ -1,0 +1,9 @@
+c:\users\bns\documents\visual studio 2013\Projects\arrays\arrays\bin\Debug\arrays.exe.config
+c:\users\bns\documents\visual studio 2013\Projects\arrays\arrays\bin\Debug\arrays.exe
+c:\users\bns\documents\visual studio 2013\Projects\arrays\arrays\bin\Debug\arrays.pdb
+c:\users\bns\documents\visual studio 2013\Projects\arrays\arrays\obj\Debug\arrays.csprojResolveAssemblyReference.cache
+c:\users\bns\documents\visual studio 2013\Projects\arrays\arrays\obj\Debug\arrays.exe
+c:\users\bns\documents\visual studio 2013\Projects\arrays\arrays\obj\Debug\arrays.pdb
+C:\Users\vorou\code\kontur-csharp-101\britskaya\arrays\arrays\bin\Debug\arrays.exe.config
+C:\Users\vorou\code\kontur-csharp-101\britskaya\arrays\arrays\obj\Debug\arrays.exe
+C:\Users\vorou\code\kontur-csharp-101\britskaya\arrays\arrays\obj\Debug\arrays.pdb
