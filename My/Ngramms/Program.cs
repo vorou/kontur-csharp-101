@@ -12,6 +12,7 @@ namespace Ngramms
         private const string TextPath = @"c:\users\vorou\text.txt";
         private const string TopPath = @"c:\users\vorou\top.txt";
         private const string TextPrunedPath = @"c:\users\vorou\text-pruned.txt";
+        private const int popularCouplesWordsAmount = 20;
 
         public static void Main()
         {
@@ -217,8 +218,42 @@ namespace Ngramms
                         orderby pair.Value descending
                         select pair;
 
-            foreach (var keyValuePair in items.Take(10))
-                Console.Out.WriteLine(keyValuePair);
+            Console.WriteLine("");
+            for (int i = 0; i < popularCouplesWordsAmount; i++)
+                Console.WriteLine("{0,-12}  {1}", items.ElementAt(i).Key, items.ElementAt(i).Value);
+            Console.ReadKey();
+
+            // 3.
+            Console.WriteLine("Введите искомое слово");
+            var findingWord = Console.ReadLine();
+            var wordCount = 1;
+            for (int i = 0; i < couplesWords.Count; i++)
+                // если уж мы храним пары в одной строке (в разных будет быстрее, см. мое решение с Tuple<string, string>)
+                // то лучше один раз здесь "распилить" на две строки, чтобы не делать одно и то же по сто раз (поиск и substring)
+                if (findingWord == items.ElementAt(i).Key.Substring(0, items.ElementAt(i).Key.IndexOf(" ")))
+                    // ElementAt(i) -- коммент про LINQ применим и здесь
+                    // либо делаем .ToList/.ToArray
+                    // либо используем foreach
+                {
+                    Console.Write(items.ElementAt(i)
+                                       .Key.Substring(items.ElementAt(i).Key.IndexOf(" "),
+                                                      items.ElementAt(i).Key.Length - items.ElementAt(i).Key.IndexOf(" ")));
+                    findingWord = items.ElementAt(i)
+                                       .Key.Substring(items.ElementAt(i).Key.IndexOf(" ") + 1,
+                                                      items.ElementAt(i).Key.Length - items.ElementAt(i).Key.IndexOf(" ") - 1);
+                    if (wordCount == 10)
+                        break;
+                    wordCount++;
+                    i = 0;
+                    continue;
+                }
+            // у нас есть задача по слову искать продолжение
+            // нужно хранить данные так, чтобы этот поиск происходил как можно быстрее
+            // конкретно здесь лучше заюзать словарь вместо списка
+            Console.ReadKey();
+
+            // в таком виде после ввода слова программа проработала полминуты, и результата все еще не было
+            // явно нужно оптимизировать, для этого объема данных слишком медленно работает
         }
     }
 }
